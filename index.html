@@ -26,17 +26,15 @@
 </header>
 
 <div class="linha" ng-repeat="pacote in pacotes_snaps">
-    <div class="coluna" ng-repeat="(chave, valor) in pacote">
-        <div class="titulo" ng-if="verificaNome(chave)">
-            <h3 ng-bind="valor"></h3>
-        </div>   
-        <div class="imagem" ng-if="verificaImagem(chave)"> 
-            <img  src="{{valor}}" alt="aguia "/>
-        </div>
-        <div class="descricao" ng-if="verificaDescricao(chave)">
-            <p ng-show="verificaDescricao(chave)" ng-bind="valor"></p>
-            <p ng-show="verificaCategoria(chave)">tag: <span  class="tag" ng-bind="valor"></span></p>
-        </div>
+    <div class="titulo" ng-if="verificaNome(pacote.key)">
+        <h3 ng-bind="pacote.value"></h3>
+    </div>   
+    <div class="imagem" ng-if="verificaImagem(pacote.key)"> 
+        <img  src="{{pacote.value}}" alt="aguia "/>
+    </div>
+    <div class="descricao" ng-if="verificaDescricao(pacote.key)">
+        <p ng-show="verificaDescricao(pacote.key)" ng-bind="pacote.value"></p>
+        <p ng-show="verificaCategoria(pacote.key)">tag: <span  class="tag" ng-bind="pacote.value"></span></p>
     </div>
 </div>
         
