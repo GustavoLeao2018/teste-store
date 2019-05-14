@@ -33,9 +33,9 @@
         <div class="imagem" ng-show="verificaImagem(chave)"> 
             <img  src="{{valor}}" alt="aguia "/>
         </div>
-        <div class="descricao" ng-show="verificaDescricao(chave)">
-            <p></p>
-            <p>tag: <span class="tag">html</span></p>
+        <div class="descricao" >
+            <p ng-show="verificaDescricao(chave)" ng-bind="valor"></p>
+            <p>tag: <span ng-show="verificaCategoria(chave)" class="tag" ng-bind="valor"></span></p>
         </div>
     </div>
 </div>
