@@ -56,7 +56,7 @@ header{
 .titulo{
     background-color: #00FF48;
     color:rgb(100, 0, 0);
-    padding: 10px;
+    padding: 10px
 
 }
 
@@ -67,5 +67,8 @@ footer{
     color:whitesmoke;
 }
 
-    
+.imagem{
+    width: 100%;
+
+}
 
