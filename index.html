@@ -27,10 +27,10 @@
 
 <div class="linha" ng-repeat="pacote in pacotes_snaps">
     <div class="coluna" ng-repeat="(chave, valor) in pacote">
-        <div class="titulo" ng-show="verificaNome(chave)">
+        <div class="titulo" ng-if="verificaNome(chave)">
             <h3 ng-bind="valor"></h3>
         </div>   
-        <div class="imagem" ng-show="verificaImagem(chave)"> 
+        <div class="imagem" ng-if="verificaImagem(chave)"> 
             <img  src="{{valor}}" alt="aguia "/>
         </div>
         <div class="descricao" ng-if="verificaDescricao(chave)">
