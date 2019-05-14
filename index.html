@@ -12,7 +12,7 @@
 
 
        
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="css/jquery-ui.css"/>
         <link rel="stylesheet" href="css/estilo.css"/>
 
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -49,20 +49,24 @@
         <p>Navegue pelas abas e descubra seus aplicativos favoritos.</p>        
 
    </article>
-    <article class="linha" id="tab-galeria">
-        <div class="coluna" ng-repeat="pacote in pacotes_snaps">
-            <div class="titulo">
-                <h3 ng-bind="pacote.nome"></h3>
-            </div>   
-            <div class="imagem"> 
-                <img  src="{{pacote.icon}}" alt="aguia "/>
-            </div>
-            <div class="descricao">
-                <p ng-bind="pacote.descricao"></p>
-                <p >tag: <span  class="tag" ng-bind="pacote.categoria"></span></p>
+   
+    <article  id="tab-galeria">
+        <div class="linha">
+            <div class="coluna" ng-repeat="pacote in pacotes_snaps">
+                <div class="titulo">
+                    <h3 ng-bind="pacote.nome"></h3>
+                </div>   
+                <div class="imagem"> 
+                    <img  src="{{pacote.icon}}" alt="aguia "/>
+                </div>
+                <div class="descricao">
+                    <p ng-bind="pacote.descricao"></p>
+                    <p >Tag: <span  class="tag" ng-bind="pacote.categoria"></span></p>
+                </div>
             </div>
         </div>
     </article>
+
     <article id="tab-loja"></article>
     <article id="tab-atualizacao">
         <h3>Faça seu cadastro!!!</h3>
