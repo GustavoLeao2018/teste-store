@@ -6,3 +6,5 @@ git commit -m "$(zenity --entry --title='Texto commit' --text='Digite o texto do
 
 git push
 
+
+zenity --notification --text="Repositorio atualizado"
