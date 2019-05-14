@@ -7,7 +7,7 @@ body{
 .linha{
 
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto;
     justify-content: space-around;
 }
 
