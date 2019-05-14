@@ -25,18 +25,20 @@
     </hgroup>
 </header>
 
-<div class="linha" ng-repeat="pacote in pacotes_snaps">
-    <div class="titulo">
-        <h3 ng-bind="pacote.nome"></h3>
-    </div>   
-    <div class="imagem"> 
-        <img  src="{{pacote.icone}}" alt="aguia "/>
+<section>
+    <div class="linha" ng-repeat="pacote in pacotes_snaps">
+        <div class="titulo">
+            <h3 ng-bind="pacote.nome"></h3>
+        </div>   
+        <div class="imagem"> 
+            <img  src="{{pacote.icone}}" alt="aguia "/>
+        </div>
+        <div class="descricao">
+            <p ng-bind="pacote.descricao"></p>
+            <p >tag: <span  class="tag" ng-bind="pacote.categoria"></span></p>
+        </div>
     </div>
-    <div class="descricao">
-        <p ng-bind="pacote.descricao"></p>
-        <p >tag: <span  class="tag" ng-bind="pacote.categoria"></span></p>
-    </div>
-</div>
+</section>
         
 <footer>
     <p> &copy; Criado por Gustavo e Nicolas </p>
