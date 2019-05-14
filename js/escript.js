@@ -59,4 +59,5 @@ angular.module("eagleStore").controller("eagleStoreCtrl", ($scope, $http) => {
         if(chave == "descricao"){return true;}
         else{ return false;}
     };
+
 });
