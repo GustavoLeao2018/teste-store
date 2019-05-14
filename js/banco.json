@@ -141,5 +141,16 @@
         "icon": "https://dashboard.snapcraft.io/site_media/appmedia/2017/11/WebStorm_1282x.png",
         "descricao": "IDE poderoso para desenvolvimento moderno de JavaScript.",
         "categoria": "desenvolvimento"
+    },
+    {
+        "nome": "Instagraph",
+        "canal_stable":true,
+        "canal_candidate":true,
+        "canal_beta":true,
+        "canal_edge":true,
+        "comando":"sudo snap install instagraph",
+        "icon":"https://dashboard.snapcraft.io/site_media/appmedia/2016/11/Instagraph.png",
+        "descricao":"Cliente Instagram não oficial.",
+        "categoria":"social"
     }
 ]
