@@ -12,9 +12,18 @@
 
 
         <link rel="stylesheet" href="css/estilo.css"/>
-
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="js/angular.min.js"></script>
         <script src="js/escript.js"></script>
+        <script type="text/js">
+            $(document).ready(() =>{
+                $("#tabs").tabs();
+            });
+        </script>
     </head>
     <body>
 
@@ -24,22 +33,31 @@
         <h2 ng-bind="subtitulo"></h2>
     </hgroup>
 </header>
-
-<section class="linha">
-    <div class="coluna" ng-repeat="pacote in pacotes_snaps">
-        <div class="titulo">
-            <h3 ng-bind="pacote.nome"></h3>
-        </div>   
-        <div class="imagem"> 
-            <img  src="{{pacote.icon}}" alt="aguia "/>
+<section>
+    <ul>
+        <li><a href="#tab-bemvindo" ng-click="trocarSubtitulo('Bem-vindo!')">Bem-vindo!</a></li>
+        <li><a href="#tab-galeria"ng-click="trocarSubtitulo('Galeria')" > Galeria</a></li>
+        <li><a href="tab-loja" ng-click="trocarSubtitulo('Loja')">Loja </a></li>
+        <li><a href="tab-sobre" ng-click="trocarSubtitulo('Sobre')"> Sobre</a></li>
+    </ul>
+   <article id="tab-bemvindo">  </article>
+    <article class="linha" id="tab-galeria">
+        <div class="coluna" ng-repeat="pacote in pacotes_snaps">
+            <div class="titulo">
+                <h3 ng-bind="pacote.nome"></h3>
+            </div>   
+            <div class="imagem"> 
+                <img  src="{{pacote.icon}}" alt="aguia "/>
+            </div>
+            <div class="descricao">
+                <p ng-bind="pacote.descricao"></p>
+                <p >tag: <span  class="tag" ng-bind="pacote.categoria"></span></p>
+            </div>
         </div>
-        <div class="descricao">
-            <p ng-bind="pacote.descricao"></p>
-            <p >tag: <span  class="tag" ng-bind="pacote.categoria"></span></p>
-        </div>
-    </div>
-</section>
-        
+    </article>
+    <article id="tab-loja"></article>
+    <article id="tab-sobre"></article>
+</section>   
 <footer>
     <p> &copy; Criado por Gustavo e Nicolas </p>
 </footer>
