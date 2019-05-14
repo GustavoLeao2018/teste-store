@@ -39,7 +39,7 @@
         <li><a href="#tab-bemvindo" ng-click="trocarSubtitulo('Seja bem-vindo!')">Bem-vindo!</a></li>
         <li><a href="#tab-galeria"ng-click="trocarSubtitulo('Galeria')" > Galeria</a></li>
         <li><a href="#tab-loja" ng-click="trocarSubtitulo('Loja')">Loja </a></li>
-        <li><a href="#tab-atualizacao" ng-click="trocarSubtitulo('Cadastro')">/</a>Cadastro</li>
+        <li><a href="#tab-atualizacao" ng-click="trocarSubtitulo('Cadastro')">Cadastro</a></li>
         <li><a href="#tab-sobre" ng-click="trocarSubtitulo('Sobre')"> Sobre</a></li>
     </ul>
    <article id="tab-bemvindo">  
@@ -67,6 +67,27 @@
     <article id="tab-atualizacao">
         <h3>Faça seu cadastro!!!</h3>
         <p>Caso deseje receber atualizações de aplicativos novos, preencha o formulario abaixo:</p>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome."/>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome."/>
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone" placeholder="Digite seu numero"/>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"/>
+
+            <label for="desenvolvedor">
+                <input type="radio" name="desenvolvedor" id="desenvolvedor" value="false" checked/> 
+                Não desenvolvedor
+            </label>
+
+            <label for="desenvolvedor">
+                    <input type="radio" name="desenvolvedor" id="desenvolvedor" value="true"/> 
+                        Desenvolvedor
+                </label>
+    
+        </form>
 
     </article>
     <article id="tab-sobre">
