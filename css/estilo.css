@@ -56,9 +56,10 @@ body{
 header{
     text-align: center;
     background-color:darkred ;
-    padding: 10px;
+    padding: 50px;
     margin: 10px;
-    color:whitesmoke;    
+    color:black;   
+     
 
 }
 
@@ -122,7 +123,7 @@ input[type=text],input[type=tel],input[type=email]{
     padding-top: 14px;  
     padding-bottom: 14px;
     padding-right: 5px;
-    padding-left: 5px;
+    padding-left: 5px;s
     border:none;
     border-bottom: 1px solid rgba(255, 0, 0, 0.4);
     transition: 0.4s ease;
@@ -169,3 +170,8 @@ label{
 
 }
 
+.logo{
+    mix-blend-mode: color-burn;
+    height: 200px;
+
+}
