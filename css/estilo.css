@@ -119,11 +119,15 @@ form{
 input[type=text],input[type=tel],input[type=email]{
     display: block;
     width: 100%;
-    padding: 10px;  
+    padding-top: 14px;  
+    padding-bottom: 14px;
+    padding-right: 5px;
+    padding-left: 5px;
     border:none;
     border-bottom: 1px solid rgba(255, 0, 0, 0.4);
     transition: 0.4s ease;
     opacity: 0.5;
+    
 
 }
 
@@ -142,6 +146,7 @@ input[type=submit]{
     border: 1px solid darkred;
     border-radius: 10px;
     opacity: 1;
+    transition: 0.3s ease-in-out;
 
 
 }
@@ -153,4 +158,14 @@ input[type=submit]:hover{
 
 }
 
+input[type=radio]{
+    margin: 15px;
+
+}
+
+label{
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
 

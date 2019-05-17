@@ -37,7 +37,7 @@
 <section id="tabs">
     <ul>
         <li><a href="#tab-bemvindo" ng-click="trocarSubtitulo('Seja bem-vindo!')">Bem-vindo!</a></li>
-        <li><a href="#tab-galeria"ng-click="trocarSubtitulo('Galeria')" > Galeria</a></li>
+        <li><a href="#tab-galeria"ng-click="trocarSubtitulo('Destaques')" >Destaques </a></li>
         <li><a href="#tab-loja" ng-click="trocarSubtitulo('Loja')">Loja </a></li>
         <li><a href="#tab-atualizacao" ng-click="trocarSubtitulo('Cadastro')">Cadastro</a></li>
         <li><a href="#tab-sobre" ng-click="trocarSubtitulo('Sobre')"> Sobre</a></li>
@@ -72,6 +72,7 @@
     </article>
 
     <article id="tab-loja">
+        <input type="search" name="procura" id="procura">
        <div ng-repeat="pacote in pacotes_snaps" >
                 
                 <h3>
