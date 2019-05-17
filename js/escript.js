@@ -3,7 +3,7 @@ angular.module("eagleStore").controller("eagleStoreCtrl", ($scope, $http) => {
     $scope.titulo = "Eagle Store";
     $scope.subtitulo = "Seja bem-vindo!";
 
-    $scope.trocarSubtitulo = (subtitulo) => {
+    $scope.trocar_classe_coluna_atual = (subtitulo) => {
         $scope.subtitulo = subtitulo;
     };
 
@@ -29,10 +29,16 @@ angular.module("eagleStore").controller("eagleStoreCtrl", ($scope, $http) => {
         if(chave == "nome"){return true;}
         else{ return false;}
     };
+
     $scope.verificaCategoria = function(chave)  {
-        if(chave == "categoria"){return true;}
-        else{ return false;}
+        if(chave == true){
+            return true; 
+        }
+        else{ 
+            return false; 
+        }
     };
+
 
     $scope.verificaComando = function(chave)  {
         if(chave == "comando"){return true;}

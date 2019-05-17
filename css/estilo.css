@@ -92,6 +92,8 @@ footer{
 
 }
 
+
+
 #tab-sobre a{
     color:darkred;
     text-decoration: none
@@ -101,4 +103,10 @@ footer{
 #tab-sobre a:hover{
     text-decoration: underline;
     
+}
+
+
+.icon {
+    width: 80px;
+    height: 80px;
 }
