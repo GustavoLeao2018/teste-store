@@ -3,7 +3,7 @@ angular.module("eagleStore").controller("eagleStoreCtrl", ($scope, $http) => {
     $scope.titulo = "Eagle Store";
     $scope.subtitulo = "Seja bem-vindo!";
 
-    $scope.trocar_classe_coluna_atual = (subtitulo) => {
+    $scope.trocarSubtitulo = (subtitulo) => {
         $scope.subtitulo = subtitulo;
     };
 
